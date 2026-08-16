@@ -1,0 +1,26 @@
+REPORTE DE EJECUCIÓN DE PRUEBAS
+Proyecto: Inventario Web - GA7-220501096-AA2-EV02
+Fecha: 2026-08-11
+
+Comando ejecutado:
+mvn clean test
+
+Resultado:
+- Pruebas ejecutadas: 12
+- Fallos: 0
+- Errores: 0
+- Omitidas: 0
+- Estado de construcción: BUILD SUCCESS
+
+Clases verificadas:
+- InMemoryProductoRepositoryTest: 4 pruebas aprobadas.
+- ProductoServiceTest: 8 pruebas aprobadas.
+
+Prueba funcional en Apache Tomcat 10.1.42:
+- GET del listado: aprobada (HTTP 200 y JSP renderizado).
+- POST de creación: aprobada (HTTP 302 y producto registrado).
+- GET de búsqueda: aprobada (producto visible en JSP).
+- POST de eliminación: aprobada (HTTP 302 y producto retirado).
+- Resultado: SMOKE TEST OK.
+
+Los reportes XML y TXT detallados se generan en target/surefire-reports.
